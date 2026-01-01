@@ -3,3 +3,5 @@
 join-command.sh
 terraform.tfstate.backup
 .terraform
+terraform-on-premise-kubeadm.iml
+terraform.tfstate
