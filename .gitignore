@@ -1,0 +1,5 @@
+/.idea/
+.terraform.lock.hcl
+join-command.sh
+terraform.tfstate.backup
+.terraform
