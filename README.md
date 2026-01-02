@@ -1,5 +1,16 @@
 # terraform-on-premise-kubeadm
 
+### Generate SSH Key
+
+```SHELL
+ssh-keygen -t rsa -b 4096 -f ~/.ssh/id_rsa_kubeadm -N ""
+```
+
+### Copy to the servers 
+```SHELL
+ssh-copy-id hkn@10.211.55.31
+```
+
 ### Init, Plan and Apply
 > terraform init
 
@@ -38,3 +49,6 @@ terraform apply -auto-approve
 terraform destroy -auto-approve
 terraform apply -auto-approve
 ```
+
+### Fetch the kubeconfig 
+> scp -i ~/.ssh/id_rsa_kubeadm hkn@10.211.55.31:~/.kube/config ~/.kube/config
